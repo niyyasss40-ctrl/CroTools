@@ -1,0 +1,25 @@
+---
+import ToolsSection from "../components/section/ToolsSection";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout disableBreadcrumb>
+  <!-- Hero -->
+  <section class="max-w-5xl mx-auto px-4 pt-20 pb-14 text-center">
+    <div class="inline-flex items-center gap-2 bg-violet-500/10 text-violet-400 text-xs px-3 py-1.5 rounded-full mb-6 border border-violet-500/20">
+      <span class="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse"></span>
+      Free · No account · No tracking
+    </div>
+    <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight mb-4 leading-tight">
+      All-in-one<br />
+      <span class="text-violet-400">micro tools</span>
+    </h1>
+    <p class="text-neutral-400 text-lg max-w-md mx-auto">
+      Short links, QR codes, media downloaders — fast and free, right in your browser.
+    </p>
+  </section>
+
+  <!-- Tools grid -->
+  <ToolsSection client:load/>
+</Layout>

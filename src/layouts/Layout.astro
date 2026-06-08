@@ -1,0 +1,64 @@
+---
+import "../assets/styles/global.css";
+import Icon from "../assets/images/crotools.png";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  disableBreadcrumb?: boolean;
+}
+
+const {
+  title = "CroTools — All-in-one Micro Tools",
+  description = "Free online tools: short link, QR code, download YouTube to MP3, TikTok to MP4, and more.",
+  disableBreadcrumb = false,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href={Icon.src} />
+    <link rel="icon" href={Icon.src} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-neutral-950 text-neutral-100 min-h-screen flex flex-col antialiased"
+  >
+    <Navbar />
+    <main class="flex-1">
+      <section class="max-w-5xl mx-auto px-4 pt-16 pb-8">
+        <!-- Breadcrumb -->
+        {!disableBreadcrumb && (
+          <nav class="text-sm text-neutral-500 mb-4">
+            <a href="/" class="hover:underline">Home</a>
+            <span class="mx-2">/</span>
+            <span>{title.includes('-') ? title.split('-')[0] : title}</span>
+          </nav>
+        )}
+        <slot />
+      </section>
+      <Footer />
+    </main>
+  </body>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+    }
+  </style>
+</html>

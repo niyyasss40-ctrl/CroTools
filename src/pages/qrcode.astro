@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import QRCodeForm from "../components/shortlink/QRCodeForm.astro";
+---
+
+<Layout
+  title="QR Code Generator - CroTools"
+  description="Generate QR codes for any URL or text. Free, no account needed."
+>
+  <div class="grid lg:grid-cols-[1fr_380px] gap-12 items-start">
+    <!-- Left: form -->
+    <div>
+      <div class="mb-8">
+        <h1 class="text-3xl font-semibold tracking-tight mb-2">
+          QR Code Generator
+        </h1>
+        <p class="text-neutral-400 text-sm leading-relaxed">
+          Create QR codes for URLs, text, or any data. Customize and download
+          your QR code instantly. All data is stored locally in your browser.
+        </p>
+      </div>
+      <QRCodeForm />
+    </div>
+
+    <!-- Right: info -->
+    <div class="space-y-4 lg:pt-[84px]">
+      <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5">
+        <h3
+          class="text-xs font-medium text-neutral-400 uppercase tracking-wider mb-3"
+        >
+          How it works
+        </h3>
+        <ol class="space-y-2.5 text-sm text-neutral-500">
+          <li class="flex gap-3">
+            <span class="text-violet-500 font-medium shrink-0">1.</span>
+            Paste your URL or text
+          </li>
+          <li class="flex gap-3">
+            <span class="text-violet-500 font-medium shrink-0">2.</span>
+            Click Generate — your QR code is ready!
+          </li>
+          <li class="flex gap-3">
+            <span class="text-violet-500 font-medium shrink-0">3.</span>
+            Download the QR code as PNG or create a new one
+          </li>
+          <li class="flex gap-3">
+            <span class="text-violet-500 font-medium shrink-0">4.</span>
+            Your QR code data is saved in your browser history for easy access
+          </li>
+        </ol>
+      </div>
+
+      <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5">
+        <h3
+          class="text-xs font-medium text-neutral-400 uppercase tracking-wider mb-3"
+        >
+          Notes
+        </h3>
+        <ul class="space-y-2 text-xs text-neutral-600 leading-relaxed">
+          <li>· Links are stored in your browser (localStorage)</li>
+          <li>· No server, no database — fully client-side</li>
+          <li>
+            · QR code images are generated on the fly and can be downloaded as
+            PNG
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Layout>

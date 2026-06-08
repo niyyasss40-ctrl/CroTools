@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ShortlinkForm from "../components/shortlink/ShortlinkForm.astro";
+---
+
+<Layout
+  title="Short Link - CroTools"
+  description="Shorten any long URL instantly. Free, no account needed."
+>
+  <div class="grid lg:grid-cols-[1fr_380px] gap-12 items-start">
+    <!-- Left: form -->
+    <div>
+      <div class="mb-8">
+        <h1 class="text-3xl font-semibold tracking-tight mb-2">Short Link</h1>
+        <p class="text-neutral-400 text-sm leading-relaxed">
+          Paste your long URL below. Optionally set a custom slug. Link data is
+          saved locally in your browser.
+        </p>
+      </div>
+      <ShortlinkForm />
+    </div>
+
+    <!-- Right: info -->
+    <div class="space-y-4 lg:pt-[84px]">
+      <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5">
+        <h3
+          class="text-xs font-medium text-neutral-400 uppercase tracking-wider mb-3"
+        >
+          How it works
+        </h3>
+        <ol class="space-y-2.5 text-sm text-neutral-500">
+          <li class="flex gap-3">
+            <span class="text-violet-500 font-medium shrink-0">1.</span>
+            Paste your long URL
+          </li>
+          <li class="flex gap-3">
+            <span class="text-violet-500 font-medium shrink-0">2.</span>
+            Add a custom slug or leave blank
+          </li>
+          <li class="flex gap-3">
+            <span class="text-violet-500 font-medium shrink-0">3.</span>
+            Click Shorten — done!
+          </li>
+          <li class="flex gap-3">
+            <span class="text-violet-500 font-medium shrink-0">4.</span>
+            Share <code class="font-mono text-xs text-violet-400"
+              >cro.to/your-slug</code
+            >
+          </li>
+        </ol>
+      </div>
+
+      <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5">
+        <h3
+          class="text-xs font-medium text-neutral-400 uppercase tracking-wider mb-3"
+        >
+          Notes
+        </h3>
+        <ul class="space-y-2 text-xs text-neutral-600 leading-relaxed">
+          <li>· Links are stored in your browser (localStorage)</li>
+          <li>· No server, no database — fully client-side</li>
+          <li>
+            · Redirect works via <code class="font-mono text-neutral-500"
+              >/s/[slug]</code>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Layout>
