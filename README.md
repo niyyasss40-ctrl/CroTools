@@ -1,46 +1,40 @@
-# Astro Starter Kit: Basics
+<p align="right">
+  <img src="https://github.com/7TogkID/gaman/blob/main/.github/images/indonesia.png?raw=true" width="23px" alt="Bahasa Indonesia">
+</p>
 
-```sh
-npm create astro@latest -- --template basics
-```
+<div align="center">
+  <a href="https://gaman.7togk.id">
+    <img src="https://raw.githubusercontent.com/angga7togk/CroTools/refs/heads/main/src/assets/images/crotools.png" width="30%" alt="Crotools Logo">
+  </a>
+</div>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<p align="center">
+  <strong>Crotools - All-in-one micro tools</strong> 
+  <br>
+  An Open Source Website to make your work/needs easier.
+</p>
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## What is Crotools?
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+**Crotools** is an open-source web platform built to make your daily life easier. It is **not just for programmers**—it's for everyone. 
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+From text formatting and calculators to quick generators and daily utility utilities, **almost every micro-tool you need is right here** in one single place. No more cluttering your browser with dozens of bookmarks.
 
-## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+## Star History
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+<a href="https://www.star-history.com/?repos=Angga7Togk%2Fcrotools&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=Angga7Togk/crotools&type=date&theme=dark&legend=bottom-right" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=Angga7Togk/crotools&type=date&legend=bottom-right" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=Angga7Togk/crotools&type=date&legend=bottom-right" />
+ </picture>
+</a>
 
-## 👀 Want to learn more?
+## Contributors ✨
+<a href="https://github.com/Angga7Togk/crotools/graphs/contributors"><img src="https://contrib.rocks/image?repo=Angga7Togk/crotools" alt="A table of avatars from the project's contributors" /></a>
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Contributing
+This project is entirely open-source! Whether you want to fix a bug, improve the design, or add a brand-new tool, feel free to fork this repository and open a Pull Request. Any help is highly appreciated!
